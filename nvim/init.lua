@@ -1,1 +1,1 @@
-require('keymaps')
+require("krishpy99")
