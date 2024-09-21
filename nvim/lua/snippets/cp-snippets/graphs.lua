@@ -3,7 +3,7 @@ local s = ls.snippet
 local fmt = require("luasnip.extras.fmt").fmt
 
 
-local unweighted_graph_boiler = s("stunweightedgraph",
+local weighted_graph_boiler = s("stweightedgraph",
 	fmt(
 		[[
 template<typename T>
@@ -19,5 +19,5 @@ struct graph : vector<vector<pair<int, T>>> {{
 	, {}))
 
 ls.add_snippets("cpp", {
-	unweighted_graph_boiler
+	weighted_graph_boiler
   })
