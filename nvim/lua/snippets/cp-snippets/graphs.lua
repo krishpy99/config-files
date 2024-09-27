@@ -2,7 +2,6 @@ local ls = require("luasnip")
 local s = ls.snippet
 local fmt = require("luasnip.extras.fmt").fmt
 
-
 local weighted_graph_boiler = s("stweightedgraph",
 	fmt(
 		[[
