@@ -16,5 +16,4 @@ local opts = {}
 
 require("lazy").setup({
     spec = "krishpy99.plugins",
-    change_detection = { notify = false }
 })
