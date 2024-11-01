@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Get the current working directory
+current_dir=$(pwd)
+
+# Use AppleScript to open a new tab in iTerm2 and cd to the current directory
+osascript <<EOF
+tell application "iTerm"
+    activate
+    tell current window to create tab with default profile
+    delay 0.5
+    tell current session of current window
+        write text "cd ${current_dir} && clear"
+    end tell
+end tell
+EOF
